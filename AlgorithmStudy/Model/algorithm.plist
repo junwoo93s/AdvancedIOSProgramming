@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sorting</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Bubble Sort</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Best</string>
+					<string>O(n)</string>
+				</array>
+				<array>
+					<string>Average</string>
+					<string>O(n^2)</string>
+				</array>
+				<array>
+					<string>Worst</string>
+					<string>O(n^2)</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(1)</string>
+			</array>
+			<key>realLife</key>
+			<string>repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements &quot;bubble&quot; to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.</string>
+			<key>type</key>
+			<string>sorting</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string>def bubbleSort(arr):\n\tn = len(arr)\n\t# Traverse through all array elements\n\tfor i in range(n):\n\t\t# Last i elements are already in place\n\t\tfor j in range(0, n-i-1): \n\t\t\t# traverse the array from 0 to n-i-1 \n\t\t\t# Swap if the element found is greater \n\t\t\t# than the next element \n\t\t\tif arr[j] &gt; arr[j+1] : \n\t\t\tarr[j], arr[j+1] = arr[j+1], arr[j]
+</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Selection Sort</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Best</string>
+					<string>O(n^2)</string>
+				</array>
+				<array>
+					<string>Average</string>
+					<string>O(n^2)</string>
+				</array>
+				<array>
+					<string>Worst</string>
+					<string>O(n^2)</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(1)</string>
+			</array>
+			<key>realLife</key>
+			<string>Selection sort is noted for its simplicity, and it has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
+The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
+
+</string>
+			<key>type</key>
+			<string>sorting</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># Traverse through all array elements\nfor i in range(len(A)):\n\t# Find the minimum element in remaining\n\t# unsorted array\n\tmin_idx = i\n\tfor j in range(i+1, len(A)): \n\t\tA[min_idx] &gt; A[j]: \n\t\t\tmin_idx = j \n# Swap the found minimum element with\nthe first element\nA[i], A[min_idx] = A[min_idx], A[i]</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Insertion Sort</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Best</string>
+					<string>O(n)</string>
+				</array>
+				<array>
+					<string>Average</string>
+					<string>O(n^2)</string>
+				</array>
+				<array>
+					<string>Worst</string>
+					<string>O(n^2)</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(1)</string>
+			</array>
+			<key>realLife</key>
+			<string>Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+
+Sorting is typically done in-place, by iterating up the array, growing the sorted list behind it. At each array-position, it checks the value there against the largest value in the sorted list (which happens to be next to it, in the previous array-position checked). If larger, it leaves the element in place and moves to the next. If smaller, it finds the correct position within the sorted list, shifts all the larger values up to make a space, and inserts into that correct position.</string>
+			<key>type</key>
+			<string>sorting</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string>def insertionSort(arr):\n\t# Traverse through 1 to len(arr)\n\tfor i in range(1, len(arr)):\n\t\tkey = arr[i]\n\t\t# Move elements of arr[0..i-1], that are\n\t\t# greater than key, to one position ahead\n\t\t# of their current position\n\t\tj = i-1\n\t\twhile j &gt;=0 and key &lt; arr[j] :\n\t\t\tarr[j+1] = arr[j]\n\t\t\tj -= 1\narr[j+1] = key 
+</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Merge Sort</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Best</string>
+					<string>O(n log(n))</string>
+				</array>
+				<array>
+					<string>Average</string>
+					<string>O(n log(n))</string>
+				</array>
+				<array>
+					<string>Worst</string>
+					<string>O(n log(n))</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(n)</string>
+			</array>
+			<key>realLife</key>
+			<string>We can divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) AND repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+Top Down : top down merge sort algorithm that recursively splits the list into sublists until sublist size is 1, then merges those sublists to produce a sorted list. The copy back step is avoided with alternating the direction of the merge with each level of recursion.
+Bottom Up : treats the list as an array of n sublists (called runs in this example) of size 1, and iteratively merges sub-lists back and forth between two buffers:
+</string>
+			<key>type</key>
+			<string>sorting</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># Python program for implementation of MergeSort\ndef mergeSort(arr):\n\tif len(arr) &gt;1:\n\t\tmid = len(arr)//2 #Finding the mid of the array\n\t\tL = arr[:mid] # Dividing the array elements\n\t\tR = arr[mid:] # into 2 halves\n\t\tmergeSort(L) # Sorting the first half\n\t\tmergeSort(R) # Sorting the second half\n\t\ti = j = k = 0\n\t\tCopy data to temp arrays L[] and R[]\n\t\twhile i &lt; len(L) and j &lt; len(R): \n\t\t\tif L[i] &lt; R[j]: \n\t\t\t\tarr[k] = L[i]\n\t\t\t\ti+=1\n\t\t\telse:\n\t\t\t\tarr[k] = R[j]\n\t\t\t\tj+=1\n\t\t\tk+=1\n\t\tChecking if any element was left\n\t\twhile i &lt; len(L):\n\t\t\tarr[k] = L[i]\n\t\t\ti+=1\n\t\t\tk+=1\n\t\twhile j &lt; len(R):\n\t\t\tarr[k] = R[j]\n\t\t\tj+=1\n\t\t\tk+=1\n# Code to print the list\ndef printList(arr):\n\tfor i in range(len(arr)):\n\t\t
+print(arr[i],end=&quot; &quot;)\n\tprint()\n
+</string>
+		</dict>
+	</array>
+	<key>Linked List</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Singly Linked List</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O(n)</string>
+				</array>
+				<array>
+					<string>Insertion</string>
+					<string>O(1)</string>
+				</array>
+				<array>
+					<string>Deletion</string>
+					<string>O(1)</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(n)</string>
+			</array>
+			<key>realLife</key>
+			<string>Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at contiguous location; the elements are linked using pointers.
+</string>
+			<key>type</key>
+			<string>Linked List</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># Node class\nclass Node:\n\t# Function to initialize the node object\n\tdef __init__(self, data): \n\t\tself.data = data  # Assign data\n\t\tself.next = None  # Initialize\n\t\t# next as null\n\n# Linked List class\nclass LinkedList:\n\t# Function to initialize the Linked \n\t# List object\n\tdef __init__(self):\n\t\tself.head = None\n
+
+</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Doubly Linked List</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O(n)</string>
+				</array>
+				<array>
+					<string>Insertion</string>
+					<string>O(1)</string>
+				</array>
+				<array>
+					<string>Deletion</string>
+					<string>O(1)</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(n)</string>
+			</array>
+			<key>realLife</key>
+			<string>A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer, together with next pointer and data which are there in singly linked list. 
+
+We can quickly insert a new node before a given node.
+a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains three fields: two link fields (references to the previous and to the next node in the sequence of nodes) and one data field in between. The beginning and ending nodes&apos; previous and next links, respectively, point to some kind of terminator, typically a sentinel node or null, to facilitate traversal of the list. If there is only one sentinel node, then the list is circularly linked via the sentinel node. It can be conceptualized as two singly linked lists formed from the same data items, but in opposite sequential orders. The two node links allow traversal of the list in either direction. While adding or removing a node in a doubly linked list requires changing more links than the same operations on a singly linked list, the operations are simpler and potentially more efficient (for nodes other than first nodes) because there is no need to keep track of the previous node during traversal or no need to traverse the list to find the previous node, so that its link can be modified.</string>
+			<key>type</key>
+			<string>Linked List</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># Node of a doubly linked list\n  
+class Node:\n\t
+    def __init__(self, next=None, prev=None, data=None):\n\t\t
+        self.next = next # reference to next node in DLL\n\t\t
+        self.prev = prev # reference to previous node in DLL\n\t\t
+        self.data = data\n\n
+
+# Adding a node at the front of the list\n
+def push(self, new_data):\n\n\t
+
+	# 1 &amp; 2: Allocate the Node &amp; Put in the data\n\t
+	new_node = Node(data = new_data)\n\t
+
+	# 3. Make next of new node as head and previous as NULL\n\t
+	new_node.next = self.head\n\t
+	new_node.prev = None\n\t
+
+	# 4. change prev of head node to new node\n\t
+	if self.head is not None:\n\t\t
+		self.head.prev = new_node\n\t
+
+	# 5. move the head to point to the new node\n\t
+	self.head = new_node\n\n
+
+# Given a node as prev_node, insert\n
+# a new node after the given node\n
+  
+def insertAfter(self, prev_node, new_data):\n\t
+  
+        # 1. check if the given prev_node is NULL\n\t
+        if prev_node is None:\n\t\t
+            print(&quot;This node doesn&apos;t exist in DLL&quot;)\n\t\t
+            return\n\t
+  
+        #2. allocate node  &amp; 3. put in the data\n\t
+        new_node = Node(data = new_data)\n\t
+  
+        # 4. Make next of new node as next of prev_node\n\t 
+        new_node.next = prev_node.next\n\t
+  
+        # 5. Make the next of prev_node as new_node\n\t
+        prev_node.next = new_node\n\t
+  
+        # 6. Make prev_node as previous of new_node\n\t
+        new_node.prev = prev_node\n\t
+  
+        # 7. Change previous of new_node&apos;s next node */\n\t
+        if new_node.next is not None:\n\t\t
+            new_node.next.prev = new_node\n
+</string>
+		</dict>
+	</array>
+	<key>Tree</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Binary Tree</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O( log(n))</string>
+				</array>
+				<array>
+					<string>Insertion</string>
+					<string>O( log(n))</string>
+				</array>
+				<array>
+					<string>Deletion</string>
+					<string>O( log(n))</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(n)</string>
+			</array>
+			<key>realLife</key>
+			<string>a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A recursive definition using just set theory notions is that a (non-empty) binary tree is a tuple (L, S, R), where L and R are binary trees or the empty set and S is a singleton set.[1] Some authors allow the binary tree to be the empty set as well. 
+Binary trees labelled this way are used to implement binary search trees and binary heaps, and are used for efficient searching and sorting. The designation of non-root nodes as left or right child even when there is only one child present matters in some of these applications, in particular it is significant in binary search trees.
+
+</string>
+			<key>type</key>
+			<string>Tree</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># Binary Tree\n
+class Node:\n\t
+    def __init__(self,key):\n\t\t
+        self.left = None\n\t\t
+        self.right = None\n\t\t
+        self.val = key\n\n
+
+# create root\n
+root = Node(1)\n
+  
+root.left      = Node(2)\n
+root.right     = Node(3)\n
+root.left.left  = Node(4)\n\n
+
+&apos;&apos;&apos; following is the tree after above statement\n
+        1\n
+      /    \\n
+     None  None&apos;&apos;&apos;\n\n
+
+&apos;&apos;&apos; 2 and 3 become left and right children of 1\n
+           1\n
+         /    \\n
+        2       3\n
+      /    \    /  \\n
+   None None None None&apos;&apos;&apos;\n\n
+  
+&apos;&apos;&apos;4 becomes left child of 2\n
+           1\n
+       /       \\n
+      2          3\n
+    /   \       /  \\n
+   4    None  None  None\n
+  /  \\n
+None None&apos;&apos;&apos;\n
+
+</string>
+		</dict>
+	</array>
+	<key>Hash Table</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Hash Table</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O(1)</string>
+				</array>
+				<array>
+					<string>Insertion</string>
+					<string>O(1)</string>
+				</array>
+				<array>
+					<string>Deletion</string>
+					<string>O(1)</string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(n)</string>
+			</array>
+			<key>realLife</key>
+			<string>hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
+The idea of hashing is to distribute the entries (key/value pairs) across an array of buckets. Given a key, the algorithm computes an index that suggests where the entry can be found.
+the hash is independent of the array size, and it is then reduced to an modulo
+
+</string>
+			<key>type</key>
+			<string>Hash Table</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string>// C++\n 
+// with negative values allowed.\n
+#include &lt;bits/stdc++.h&gt; \n
+using namespace std;\n
+#define MAX 1000\n
+
+// Since array is global, it is initialized as 0.\n
+bool has[MAX + 1][2];\n\n
+
+// searching if X is Present in the given array\n
+// or not.\n
+bool search(int X)\n
+{\n\t
+	if (X &gt;= 0){\n\t\t
+		if (has[X][0] == 1)\n\t\t\t
+			return true;\n\t\t
+		else\n\t\t\t
+			return false;\n\t
+	}\n\t\n
+
+	// if X is negative take the absolute\n\t
+	// value of X. \n\t
+	X = abs(X); \n\t
+	if (has[X][1] == 1)\n\t\t
+		return true;\n\t
+	return false; \n
+} \n\n
+
+void insert(int a[], int n) \n
+{ \n\t
+	for (int i = 0; i &lt; n; i++){ \n\t\t
+		if (a[i] &gt;= 0) \n\t\t\t
+			has[a[i]][0] = 1; \n \t\telse\n\t\t\t
+			has[abs(a[i])][1] = 1;\n\t
+	}\n
+}\n\n
+
+int main()\n
+{ \n\t
+	int a[] = { -1, 9, -5, -8, -5, -2 };\n\t
+	int n = sizeof(a)/sizeof(a[0]); \n\t
+	insert(a, n); \n\t
+	int X = -5; \n\t
+	if (search(X) == true) \n\t
+	cout &lt;&lt; &quot;Present&quot;;\n\t
+	else\n\t
+	cout &lt;&lt; &quot;Not Present&quot;;\n\t
+	return 0; \n
+} 
+
+</string>
+		</dict>
+	</array>
+	<key>Searching</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Breadth First Search</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O(NODES + EDGES)</string>
+				</array>
+				<array>
+					<string>Insertion</string>
+					<string></string>
+				</array>
+				<array>
+					<string>Deletion</string>
+					<string></string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(NODES)</string>
+			</array>
+			<key>realLife</key>
+			<string>Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a &apos;search key&apos;[1]), and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.
+It uses the opposite strategy as depth-first search, which instead explores the highest-depth nodes first before being forced to backtrack and expand shallower nodes.
+Also it is accomplished by enqueueing each level of a tree sequentially as the root of any subtree is encountered. There are 2 cases in the iterative algorithm.
+Root case: The traversal queue is initially empty so the root node must be added before the general case.
+General case: Process any items in the queue, while also expanding their children. Stop if the queue is empty. The general case will halt after processing the bottom level as leaf nodes have no children.
+</string>
+			<key>type</key>
+			<string>Searching</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># from a given source vertex. BFS(int s) 
+# traverses vertices reachable from s. 
+from collections import defaultdict 
+
+# This class represents a directed graph 
+# using adjacency list representation 
+class Graph: 
+
+	# Constructor 
+	def __init__(self): 
+
+		# default dictionary to store graph 
+		self.graph = defaultdict(list) 
+
+	# function to add an edge to graph 
+	def addEdge(self,u,v): 
+		self.graph[u].append(v) 
+
+	# Function to print a BFS of graph 
+	def BFS(self, s): 
+
+		# Mark all the vertices as not visited 
+		visited = [False] * (len(self.graph)) 
+
+		# Create a queue for BFS 
+		queue = [] 
+
+		# Mark the source node as 
+		# visited and enqueue it 
+		queue.append(s) 
+		visited[s] = True
+
+		while queue: 
+
+			# Dequeue a vertex from 
+			# queue and print it 
+			s = queue.pop(0) 
+			print (s, end = &quot; &quot;) 
+
+			# Get all adjacent vertices of the 
+			# dequeued vertex s. If a adjacent 
+			# has not been visited, then mark it 
+			# visited and enqueue it 
+			for i in self.graph[s]: 
+				if visited[i] == False: 
+					queue.append(i) 
+					visited[i] = True
+
+# Driver code 
+
+# Create a graph given in 
+# the above diagram 
+g = Graph() 
+g.addEdge(0, 1) 
+g.addEdge(0, 2) 
+g.addEdge(1, 2) 
+g.addEdge(2, 0) 
+g.addEdge(2, 3) 
+g.addEdge(3, 3) 
+
+print (&quot;Following is Breadth First Traversal&quot;
+				&quot; (starting from vertex 2)&quot;) 
+g.BFS(2) 
+
+
+</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Depth First Search</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O(NODES + EDGES)</string>
+				</array>
+				<array>
+					<string>Average</string>
+					<string></string>
+				</array>
+				<array>
+					<string>Worst</string>
+					<string></string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(NODES)</string>
+			</array>
+			<key>realLife</key>
+			<string>Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
+we may come to the same node again. To avoid processing a node more than once, we use a boolean visited array.
+For example, in the following graph, we start traversal from vertex 2. When we come to vertex 0, we look for all adjacent vertices of it. 2 is also an adjacent vertex of 0. If we don’t mark visited vertices, then 2 will be processed again and it will become a non-terminating process.
+</string>
+			<key>type</key>
+			<string>Searching</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string># Python program to print DFS traversal from a 
+# given given graph 
+from collections import defaultdict 
+
+# This class represents a directed graph using 
+# adjacency list representation 
+class Graph: 
+
+	# Constructor 
+	def __init__(self): 
+
+		# default dictionary to store graph 
+		self.graph = defaultdict(list) 
+
+	# function to add an edge to graph 
+	def addEdge(self,u,v): 
+		self.graph[u].append(v) 
+
+	# A function used by DFS 
+	def DFSUtil(self,v,visited): 
+
+		# Mark the current node as visited and print it 
+		visited[v]= True
+		print v, 
+
+		# Recur for all the vertices adjacent to this vertex 
+		for i in self.graph[v]: 
+			if visited[i] == False: 
+				self.DFSUtil(i, visited) 
+
+
+	# The function to do DFS traversal. It uses 
+	# recursive DFSUtil() 
+	def DFS(self,v): 
+
+		# Mark all the vertices as not visited 
+		visited = [False]*(len(self.graph)) 
+
+		# Call the recursive helper function to print 
+		# DFS traversal 
+		self.DFSUtil(v,visited) 
+
+
+# Driver code 
+# Create a graph given in the above diagram 
+g = Graph() 
+g.addEdge(0, 1) 
+g.addEdge(0, 2) 
+g.addEdge(1, 2) 
+g.addEdge(2, 0) 
+g.addEdge(2, 3) 
+g.addEdge(3, 3) 
+
+print &quot;Following is DFS from (starting from vertex 2)&quot;
+g.DFS(2) 
+</string>
+		</dict>
+	</array>
+	<key>Dynamic Programming</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Fibonacci</string>
+			<key>timeComplex</key>
+			<array>
+				<array>
+					<string>Search</string>
+					<string>O(NODES + EDGES)</string>
+				</array>
+				<array>
+					<string>Insertion</string>
+					<string></string>
+				</array>
+				<array>
+					<string>Deletion</string>
+					<string></string>
+				</array>
+			</array>
+			<key>spaceComplex</key>
+			<array>
+				<string>O(NODES)</string>
+			</array>
+			<key>realLife</key>
+			<string>Breadth First Search guarantees visiting all nodes to find the goal at distance and can be used to perform search on any of the structured. Good example would be GPS navigation system</string>
+			<key>type</key>
+			<string>Fibonacci</string>
+			<key>animation</key>
+			<string></string>
+			<key>sampleCode</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

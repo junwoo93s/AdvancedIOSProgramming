@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sorting</key>
+	<array>
+		<dict>
+			<key>type1</key>
+			<array>
+				<string>What is the Time Complexity Of the Bubble Sort (Best)</string>
+				<string>O(n)</string>
+				<string>What is the Time Complexity Of the Bubble Sort (Average)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Bubble Sort (Worst)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Selection Sort (Best)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Selection Sort (Average)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Selection Sort (Worst)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Insertion Sort (Best)</string>
+				<string>O(n)</string>
+				<string>What is the Time Complexity Of the Insertion Sort (Average)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Insertion Sort (Worst)</string>
+				<string>O(n^2)</string>
+				<string>What is the Time Complexity Of the Merge Sort (Best)</string>
+				<string>O(nlog(n))</string>
+				<string>What is the Time Complexity Of the Merge Sort (Average)</string>
+				<string>O(nlog(n))</string>
+				<string>What is the Time Complexity Of the Merge Sort (Worst)</string>
+				<string>O(n)</string>
+				<string>Which Algorithm have the fastest Time Complexcity among these algorithms </string>
+				<string>Merge Sort</string>
+			</array>
+		</dict>
+	</array>
+	<key>Linked List</key>
+	<array>
+		<dict>
+			<key>type1</key>
+			<array>
+				<string>What is the Singly Linked Search Time Complexity</string>
+				<string>O(n)</string>
+				<string>What is the Singly Linked Inserting Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Singly Linked Deleting Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Singly Linked Space Complexity</string>
+				<string>O(n)</string>
+				<string>What is the Doubly Linked Search Time Complexity</string>
+				<string>O(n)</string>
+				<string>What is the Doubly Linked Inserting Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Doubly Linked Deleting Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Doubly Linked Space Complexity</string>
+				<string>O(n)</string>
+				<string>What is the time complexity of inserting at the end</string>
+				<string>O(1)</string>
+				<string>What is the time complexity to count the number of elements in the linked list</string>
+				<string>O(n)</string>
+			</array>
+		</dict>
+	</array>
+	<key>Tree</key>
+	<array>
+		<dict>
+			<key>type1</key>
+			<array>
+				<string>What is BST Search Time Complexity</string>
+				<string>O(log(n))</string>
+				<string>What is BST Insert Time Complexity</string>
+				<string>O(log(n))</string>
+				<string>What is BST Delete Time Complexity</string>
+				<string>O(log(n))</string>
+				<string>What is BST Space Complexity</string>
+				<string>O(n)</string>
+			</array>
+		</dict>
+	</array>
+	<key>Hash Table</key>
+	<array>
+		<dict>
+			<key>type1</key>
+			<array>
+				<string>What is the Hash Table&apos;s Searching Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Hash Table&apos;s Inserting Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Hash Table&apos;s Deleting Time Complexity</string>
+				<string>O(1)</string>
+				<string>What is the Hash Table&apos;s Space Complexity</string>
+				<string>O(n)</string>
+			</array>
+		</dict>
+	</array>
+	<key>Searching</key>
+	<array>
+		<dict>
+			<key>type1</key>
+			<array>
+				<string>What is the BFS Searching Time Complexity</string>
+				<string>O(N+E)</string>
+				<string>What is the BFS Space Complexity</string>
+				<string>O(N)</string>
+				<string>What is the DFS Searching Time Complexity</string>
+				<string>O(N+E)</string>
+				<string>What is the DFS Space Complexity</string>
+				<string>O(N)</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
